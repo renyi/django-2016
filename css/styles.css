@@ -1,0 +1,39 @@
+body {
+    color: #444;
+    background-color: #FFF;
+}
+
+#header, #footer {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    color: #DDD;
+    background-color: #444;
+    padding: 10px;
+}
+
+#header {
+    top: 0px;
+}
+
+#header a {
+    color: #DDD;
+}
+
+
+#footer {
+    bottom: 0px;
+}
+
+section {
+    text-align: center;
+}
+
+section h1 {
+    font-size: 48px;
+}
+
+section ul li {
+    font-size: 24px;
+    text-align: left;
+}

@@ -1,0 +1,774 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Web Development with Django</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/jquery.fullpage/2.8.9/jquery.fullpage.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+                </div>
+                <div class="col-xs-8">
+                    <div class="text-center">
+                        <a href="http://renyi.github.io/django-2016">Web Development with Django in 2016</a>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="text-right">
+                        <a href="https://twitter.com/renyikhor">@renyikhor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+
+
+        <div id="fullpage">
+        <div class="container">
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h1>Web Development with Django in 2016</h1>
+                        </div>
+
+                        <p class="lead">by Renyi Khor</p>
+
+                        <p>
+                            <a href="https://twitter.com/renyikhor">@renyikhor</a><br>
+
+                            <a href="https://renyi.github.io/django-2016/">https://renyi.github.io/django-2016/</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>What is Django?</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - A high-level Python Web framework
+                                    </li>
+                                    <li>
+                                        - Clean and pragmatic design
+                                    </li>
+                                    <li>
+                                        - Help developers take applications from concept to completion as quickly as possible.
+                                    </li>
+                                    <li>
+                                        - Django takes security seriously
+                                    </li>
+                                    <li>
+                                        - Exceedingly scalable
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Features</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - Object-relational mapper (ORM)
+                                        <p>
+                                            <small>
+                                                Provides an abstraction layer (the “models”) for structuring and manipulating the data
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        - Automatic admin interface
+                                        <p>
+                                            <small>
+                                                Generates a CRUD interface from the model's metadata.
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        - Robust template system
+                                        <p>
+                                            <small>
+                                                Multiple Template Engine, Complex template loader, Custom backends.
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        - Performance and optimization
+                                        <p>
+                                            <small>
+                                                Caching Framework, "Laziness", ETag, Gzip, etc.
+                                            </small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Features</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - Internationalization and localization.
+                                        <p>
+                                            <small>
+                                                 Full support for translation of text, formatting of dates, times and numbers, and time zones.
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        - Geographic framework
+                                        <p>
+                                            <small>
+                                                GeoDjango intends to be a world-class geographic Web framework.
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        - API stability
+                                        <p>
+                                            <small>
+                                                All the public APIs (everything in this documentation) will not be moved or renamed without providing backwards-compatible aliases.
+                                            </small>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        - Secure
+                                        <p>
+                                            <small>
+                                                ClickJacking protection, CSRF, Cryptographic signing, etc.
+                                            </small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h1>Brief History of Django</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Django 1.3</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - Class Based Views
+                                    </li>
+                                    <li>
+                                        - Static Files
+                                    </li>
+                                    <li>
+                                        - Logging
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Django 1.4</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - New project layout
+                                    </li>
+                                    <li>
+                                        - Timezone (UTC)
+                                    </li>
+                                    <li>
+                                        - Support for <strong>in-browser</strong> testing frameworks
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Django 1.5</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - Configurable <strong>User</strong> Model
+                                    </li>
+                                    <li>
+                                        - StreamingHttpResponse
+                                    </li>
+                                    <li>
+                                        - PostGIS 2.0 support
+                                    </li>
+                                    <li>
+                                        - <strong>{% verbatim %}</strong> template tag
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Django 1.6</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - Improved <strong>transactions</strong> management
+                                    </li>
+                                    <li>
+                                        - Persistent <strong>database</strong> connections
+                                    </li>
+                                    <li>
+                                        - BinaryField
+                                    </li>
+                                    <li>
+                                        - Malcolm Tredinnick
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Django 1.7</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - Built-in support for <strong>schema</strong> migrations
+                                    </li>
+                                    <li>
+                                        - App-loading refactor
+                                    </li>
+                                    <li>
+                                        - Improvements to <strong>Form</strong> error handling
+                                    </li>
+                                    <li>
+                                        - JsonResponse
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Django 1.8</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - Multiple <strong>template</strong> engines
+                                    </li>
+                                    <li>
+                                        - <strong>Security</strong> enhancements SecurityMiddleware <br><small>(django-secure)</small>
+                                    </li>
+                                    <li>
+                                        - New <strong>PostgreSQL</strong> specific functionality
+                                        <p>
+                                            <small>ArrayField, HStoreField, Range Fields, and unaccent lookup</small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Django 1.9</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - Configurable <strong>Password</strong> Validation
+                                    </li>
+                                    <li>
+                                        - New CBV mixins <small>(django-braces)</small>
+                                        <br>
+                                        <p>
+                                            <small>AccessMixin, LoginRequiredMixin, PermissionRequiredMixin, and UserPassesTestMixin</small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        - For PostGIS users
+                                        <br>
+                                        <p>
+                                            <small>RasterField</small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        - django.contrib.postgres
+                                        <br>
+                                        <p>
+                                            <small>JSONField, PostgreSQL specific aggregation functions</small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Django 1.10</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - <strong>Full text search</strong> for PostgreSQL
+                                        <br>
+                                        <p>
+                                            <small>Trigram lookup support</small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        - Official support for <strong>Unicode</strong> usernames
+                                    </li>
+                                    <li>
+                                        - The <strong>LogEntry</strong> model now stores change messages in a <strong>JSON</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h1>Extending Django</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Static files</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        - collectfast
+                                        <p>
+                                        <small>
+                                            A Faster Collectstatic.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-pipeline
+                                        <p>
+                                        <small>
+                                            Pipeline is an asset packaging library for Django.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-bower
+                                        <p>
+                                        <small>
+                                            Easy way to use bower with your django project.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-storages-redux
+                                        <p>
+                                        <small>
+                                            Support for many storages (S3, MogileFS, etc) in Django.
+                                        </small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Images</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>- pillow
+                                        <p>
+                                        <small>
+                                            Python Imaging Library.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- easy-thumbnails
+                                        <p>
+                                        <small>
+                                            A powerful, yet easy to implement thumbnailing appl.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-cleanup
+                                        <p>
+                                        <small>
+                                            Automatically deletes files for FileField, ImageField, and subclasses.
+                                        </small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>User</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>- django-allauth
+                                        <p>
+                                        <small>
+                                            Addresses authentication, registration, account management as well as 3rd party (social) account authentication.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-registration
+                                        <p>
+                                        <small>
+                                            A simple, extensible user-registration app for Django.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-registration-defaults
+                                        <p>
+                                        <small>
+                                            15 templates required to implement the workflow of registration, login/logout, and password changing and resetting.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-password-reset
+                                        <p>
+                                        <small>
+                                            Class-based views for password reset.
+                                        </small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Forms</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>- django-forms-bootstrap</li>
+                                    <li>- django-multiselectfield</li>
+                                    <li>- django_select2</li>
+                                    <li>- django-countries</li>
+                                    <li>- django-money</li>
+                                    <li>- django-form-utils
+                                        <p>
+                                        <small>
+                                            Form enhancements for Django (fieldset and row-attrs support, and more).
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-widget-tweaks
+                                        <p>
+                                        <small>
+                                            Altering CSS classes and HTML attributes is supported.
+                                        </small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>API</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>- djangorestframework
+                                        <p>
+                                        <small>
+                                            Powerful and flexible toolkit for building Web APIs.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-rest-swagger
+                                        <p>
+                                        <small>
+                                            Swagger Documentation Generator for Django REST Framework.
+                                        </small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Background Task</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>- django-celery
+                                        <p>
+                                        <small>
+                                            Celery is an asynchronous task queue/job queue.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- seacucumber
+                                        <p>
+                                        <small>
+                                            Sea Cucumber routes email through Amazon Web Services' excellent Simple Email Service (SES).
+                                        </small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="page-header">
+                            <h1>Miscellaneous</h1>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li>- django-extensions
+                                        <p>
+                                        <small>
+                                            A collection of custom extensions for the Django
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-uuslug
+                                        <p>
+                                        <small>
+                                            Returns a unique (& unicode) slugs in Django.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-autoslug
+                                        <p>
+                                        <small>
+                                            An automated slug field for Django.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-contrib-comments
+                                        <p>
+                                        <small>
+                                            This framework can be used to attach comments to any model.
+                                        </small>
+                                        </p>
+                                    </li>
+                                    <li>- django-tables2
+                                        <p>
+                                        <small>
+                                            Automatic table generation based on a Django model. Supports jQuery DataTables.
+                                        </small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h1>Questions ?</h1>
+                        </div>
+
+                        <h2>Web Development with Django in 2016</h2>
+
+                        <p class="lead">by Renyi Khor</p>
+
+                        <p>
+                            <a href="https://twitter.com/renyikhor">@renyikhor</a><br>
+
+                            <a href="https://renyi.github.io/django-2016/">https://renyi.github.io/django-2016/</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.8.9/jquery.fullpage.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
